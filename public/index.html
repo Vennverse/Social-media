@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script>
+      var test = true; // False if contracts are on Mainnet
+      var contractAddressSale = '0x93Df7D7E01C60843AcF1b9Ec463E5772B959a0ce';
+      var contractAddressToken = '0x040C14d8bcD464d8767e0f7d2cF1147ED8F1c36A';
+      </script>
+      <meta name="title" content="Vennverse - A decentralized Social media share your NFT, photos & Video ">
+      <meta name="description" content="Vennverse is A decentralized Social media where you can share your thoughts photos & Video chat and marketplace to sell your NFTs and digital assets ">
+      <meta name="keywords" content="NFT,crypto Exchange,assets,best decentralized exchange,social media ,video,photos,tweet,Indian Nft,Celebs Nft,how to buy nft,whats an nft,where to buy nft,nft art marketplace,wazirx nft,rarible nft,create nft,mint,mint nft,best nft marketplace,nft news,nba nft,nft examples,most expensive nft,open sea nft,nft memes,nft marketplace,nft meaning">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="https://bafybeiettcgogfvc64d7d7kssxu7sng6wezxtfblljcnwtmgq6ewmika2a.ipfs.infura-ipfs.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vennverse</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__icons">
+        <div class="header__icon active">
+          <span class="material-icons"> home </span>
+          <p>Home</p>
+        </div>
+
+        <div class="header__icon">
+          <span class="material-icons"> flash_on </span>
+          <p>Trending</p>
+        </div>
+
+        <div class="header__icon">
+          <span class="material-icons"> live_tv </span>
+          <p>Verified</p>
+        </div>
+
+        <div class="header__icon">
+          <span class="material-icons"> video_library </span>
+          <p>Collections</p>
+        </div>
+
+        <div class="header__icon">
+          <span class="material-icons"> search </span>
+          <p>Search</p>
+        </div>
+
+        <div class="header__icon">
+          <span class="material-icons"> person_outline </span>
+          <p>Account</p>
+        </div>
+      </div>
+      <img src="https://bafybeiettcgogfvc64d7d7kssxu7sng6wezxtfblljcnwtmgq6ewmika2a.ipfs.infura-ipfs.io/" alt="" />
+    </div>
+    <!-- header ends -->
+
+    <!-- nav starts -->
+    <div class="nav">
+      <h2>Trending</h2>
+      <h2>Top Rated</h2>
+      <h2>Action</h2>
+      <h2>Comedy</h2>
+      <h2>Horror</h2>
+      <h2>Romance</h2>
+      <h2>Mystrey</h2>
+      <h2>Sci-fi</h2>
+      <h2>Western</h2>
+      <h2>Animation</h2>
+      <h2>TV Movie</h2>
+    </div>
+    <div style="text-align: center">
+      <button id="connect" style="font-size: 12px">Connect</button> <button class="switch" id="addTestMATIC" style="font-size: 12px;">Polygon (MATIC) Mumbai Testnet</button>
+      <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
+      <div class="network small"><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
+      <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
+      </div>
+      
+      
+      <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+      <script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+      <script src='https://dappbuilder.org/matic/tokensaleclaimtimeref/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+     
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
