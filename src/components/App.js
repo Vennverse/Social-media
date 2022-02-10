@@ -1,7 +1,5 @@
 import Decentragram from '../abis/Decentragram.json'
 import React, { Component } from 'react';
-import Identicon from 'identicon.js';
-import Navbar from './Navbar'
 import Main from './Main'
 import Web3 from 'web3';
 import './App.css';
@@ -115,7 +113,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar account={this.state.account} />
+        
         { this.state.loading
           ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
           : <Main
