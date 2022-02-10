@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Decentralized Social Media",
   "author": "Dapp University",
-  "homepage": "http://vennverse.com/",
+  "homepage": "https://vennverse.github.io/Vennverse/",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.1.0",
     "babel-polyfill": "6.26.0",
