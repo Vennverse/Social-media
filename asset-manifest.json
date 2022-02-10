@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Vennverse/static/css/main.d850c1a7.chunk.css",
+    "main.js": "/Vennverse/static/js/main.1c145cc7.chunk.js",
+    "main.js.map": "/Vennverse/static/js/main.1c145cc7.chunk.js.map",
+    "runtime-main.js": "/Vennverse/static/js/runtime-main.8f58ec3a.js",
+    "runtime-main.js.map": "/Vennverse/static/js/runtime-main.8f58ec3a.js.map",
+    "static/css/2.80dce9aa.chunk.css": "/Vennverse/static/css/2.80dce9aa.chunk.css",
+    "static/js/2.cf67b2b8.chunk.js": "/Vennverse/static/js/2.cf67b2b8.chunk.js",
+    "static/js/2.cf67b2b8.chunk.js.map": "/Vennverse/static/js/2.cf67b2b8.chunk.js.map",
+    "index.html": "/Vennverse/index.html",
+    "precache-manifest.653311fac2bbb3c5e22eeb728d3796f0.js": "/Vennverse/precache-manifest.653311fac2bbb3c5e22eeb728d3796f0.js",
+    "service-worker.js": "/Vennverse/service-worker.js",
+    "static/css/2.80dce9aa.chunk.css.map": "/Vennverse/static/css/2.80dce9aa.chunk.css.map",
+    "static/css/main.d850c1a7.chunk.css.map": "/Vennverse/static/css/main.d850c1a7.chunk.css.map",
+    "static/js/2.cf67b2b8.chunk.js.LICENSE.txt": "/Vennverse/static/js/2.cf67b2b8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f58ec3a.js",
+    "static/css/2.80dce9aa.chunk.css",
+    "static/js/2.cf67b2b8.chunk.js",
+    "static/css/main.d850c1a7.chunk.css",
+    "static/js/main.1c145cc7.chunk.js"
+  ]
+}
