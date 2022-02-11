@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script>
       var test = true; // False if contracts are on Mainnet
       var contractAddressSale = '0x93Df7D7E01C60843AcF1b9Ec463E5772B959a0ce';
@@ -31,43 +30,121 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    
+    <script src="https://kit.fontawesome.com/31b01e06f1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Vennverse</title>
   </head>
   <body>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  
+  /* header */
+  .header {
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+  
+  .header::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .header {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .header > img {
+    object-fit: contain;
+    height: 80px;
+  }
+  
+  .header__icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header__icon {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .header__icon p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    display: none;
+  }
+  
+  .header__icon:hover p {
+    display: inline-flex;
+  }
+  
+  .header__icon .material-icons {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .active > p {
+    display: inline-flex;
+  }
+  
+  /* nav */
+  .nav {
+    display: flex;
+    color: rgb(0, 0, 0);
+    overflow-x: scroll;
+    padding: 10px;
+    padding-left: 40px;
+  }
+  
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .nav h2 {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: transform 50ms ease-out;
+  }
+  
+  .nav h2:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+    </style>
     <div class="header">
       <div class="header__icons">
         <div class="header__icon active">
-          <span class="material-icons"> home </span>
-          <p>Home</p>
+          <p>VennGram</p>
         </div>
 
-        <div class="header__icon">
-          <span class="material-icons"> flash_on </span>
-          <p>Trending</p>
-        </div>
-
-        <div class="header__icon">
-          <span class="material-icons"> live_tv </span>
-          <p>Verified</p>
-        </div>
-
-        <div class="header__icon">
-          <span class="material-icons"> video_library </span>
-          <p>Collections</p>
-        </div>
-
-        <div class="header__icon">
-          <span class="material-icons"> list_alt </span>
-          <p>Feeds</p>
-        </div>
-
-        <div class="header__icon">
-          <span class="material-icons"> person_outline </span>
-          <p>Account</p>
-        </div>
+  
       </div>
       <img src="https://bafybeicgkd2tcr6lehvgit5tybrsqocf33utknbrp5qvxmthvntrlkee5i.ipfs.infura-ipfs.io/" alt="" />
     </div>
@@ -75,11 +152,11 @@
 
     <!-- nav starts -->
     <div class="nav">
-      <h2>Reels</h2>
-      <h2>Chat</h2>
-      <h2>Games</h2>
-      <h2>NFTs</h2>
-      <h2>Images</h2>
+      <h2> <i class="fa-brands fa-twitter"></i> Venn-Tweet</h2>
+      <h2> <i class="fa-brands fa-reddit-alien"></i> Venn-Reddit</h2>
+      <h2> <i class="fa-brands fa-youtube"></i> VennTube</h2>
+      <h2> <i class="fa-solid fa-photo"></i> NFTs</h2>
+      <h2> <i class="fa-brands fa-rocketchat"></i> Chat</h2>
     </div>
     <div style="text-align: center">
       <button id="connect" style="font-size: 12px">Connect</button> <button class="switch" id="addTestMATIC" style="font-size: 12px;">Polygon (MATIC) Mumbai Testnet</button>
@@ -87,20 +164,12 @@
       <div class="network small"><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
       <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
       </div>
-      
-      
- 
+      <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+      <script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+      <script src='https://dappbuilder.org/matic/tokensaleclaimtimeref/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
      
     </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
