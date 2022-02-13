@@ -3,9 +3,10 @@
   <head>
     <script>
       var test = true; // False if contracts are on Mainnet
-      var contractAddressSale = '0x93Df7D7E01C60843AcF1b9Ec463E5772B959a0ce';
-      var contractAddressToken = '0x040C14d8bcD464d8767e0f7d2cF1147ED8F1c36A';
+      var contractAddressSale = '0xf8591C7B5aDA09aB04E52f2D0da64BF7ce13F4E5';
+      var contractAddressToken = '0x65ff9e856dFA60D89F3d673d847223798bFB22B9';
       </script>
+      
       <meta name="title" content="Vennverse - A decentralized Social media share your NFT, photos & Video ">
       <meta name="description" content="Vennverse is A decentralized Social media where you can share your thoughts photos & Video chat and marketplace to sell your NFTs and digital assets ">
       <meta name="keywords" content="NFT,crypto Exchange,assets,best decentralized exchange,social media ,video,photos,tweet,Indian Nft,Celebs Nft,how to buy nft,whats an nft,where to buy nft,nft art marketplace,wazirx nft,rarible nft,create nft,mint,mint nft,best nft marketplace,nft news,nba nft,nft examples,most expensive nft,open sea nft,nft memes,nft marketplace,nft meaning">
@@ -31,7 +32,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <script src="https://kit.fontawesome.com/31b01e06f1.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <title>Vennverse</title>
   </head>
   <body>
@@ -43,9 +43,26 @@
   }
   
   body {
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    background-image: linear-gradient(to right, #ffffff, #fdfdfd);
   }
   
+  button {
+background-color: #0d82ffb6;
+border: none;
+border-radius: 2px;
+color: rgb(255, 255, 255)5;
+padding: 5px 20px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #005fad;
+}
   /* header */
   .header {
     color: rgb(0, 0, 0);
@@ -128,8 +145,8 @@
     cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
-    font-weight: 500;
-    opacity: 0.7;
+    font-weight: 100;
+    opacity: 0.9;
     transition: transform 50ms ease-out;
   }
   
@@ -152,9 +169,9 @@
 
     <!-- nav starts -->
     <div class="nav">
+      <h2> <i class="fa-brands fa-tiktok"></i> Venn-Tiktok</h2>
       <h2> <i class="fa-brands fa-twitter"></i> Venn-Tweet</h2>
       <h2> <i class="fa-brands fa-reddit-alien"></i> Venn-Reddit</h2>
-      <h2> <i class="fa-brands fa-youtube"></i> VennTube</h2>
       <h2> <i class="fa-solid fa-photo"></i> NFTs</h2>
       <h2> <i class="fa-brands fa-rocketchat"></i> Chat</h2>
     </div>
@@ -162,7 +179,6 @@
       <button id="connect" style="font-size: 12px">Connect</button> <button class="switch" id="addTestMATIC" style="font-size: 12px;">Polygon (MATIC) Mumbai Testnet</button>
       <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
       <div class="network small"><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
-      <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
       </div>
       <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
       <script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
